@@ -11,7 +11,7 @@ A 2d game built using vanilla Javascript, HTML 5 and CSS with user authenticatio
 <img src="Screenshots/LoginPage.jpg">
 
 ## `Puzzle List`
-<img src="Screenshots/PuzzleList.jpg">
+<img src="Screenshots/puzzleList.jpg">
 
 ## `Game`
 <img src="Screenshots/Game.jpg">
