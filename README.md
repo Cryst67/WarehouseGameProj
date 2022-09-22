@@ -6,3 +6,7 @@ A 2d game built using vanilla Javascript, HTML 5 and CSS with user authenticatio
 - User authentication through mySQL database
 - Using mySQL database to generate a puzzle list 
 - Unique player tags
+
+Login Page: 
+
+![login page](https://github.com/Cryst67/WarehouseGameProj/blob/main/Screenshots/LoginPage.jpg)
