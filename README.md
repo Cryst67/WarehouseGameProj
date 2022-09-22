@@ -8,5 +8,10 @@ A 2d game built using vanilla Javascript, HTML 5 and CSS with user authenticatio
 - Unique player tags
 
 ## `Login`
+<img src="Screenshots/LoginPage.jpg">
 
-![login page](https://github.com/Cryst67/WarehouseGameProj/blob/main/Screenshots/LoginPage.jpg)
+## `Puzzle List`
+<img src="Screenshots/PuzzleList.jpg">
+
+## `Game`
+<img src="Screenshots/Game.jpg">
