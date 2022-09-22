@@ -1,0 +1,71 @@
+body{
+        color: #bdc0c3;
+        background-color:#202124;
+        font-family: 'Aldrich', sans-serif;
+        height: 100%;
+    }
+
+a{
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:visited {
+  color: hotpink;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto 1fr;
+    row-gap: 20px;
+}
+
+#header{
+    grid-column: 2 / -2;
+    text-align: center;
+}
+
+#register-box{
+    padding: 10px;
+    grid-row-start: 2;
+    grid-column-start: 3;
+    border: 2px groove white;
+
+}
+
+#login-box{
+    padding: 10px;
+    grid-row-start: 2;
+    grid-column-start: 5;
+    border: 2px groove white;
+
+}
+
+#error{
+    text-align: center;
+    grid-row-start: 3;
+    grid-column: 1 / -1;
+}
+
+#success{
+    text-align: center;
+    grid-row-start: 3;
+    grid-column: 1 / -1;
+}
+
+#username{
+    place-self: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+#logout{
+    place-self: center;
+    grid-row-start: 1;
+    grid-column-start: 7;
+}
+
+.puz{
+    grid-column: 1/ -1;
+}
