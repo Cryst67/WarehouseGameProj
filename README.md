@@ -6,6 +6,7 @@ A 2d game built using vanilla Javascript, HTML 5 and CSS with user authenticatio
 - User authentication through mySQL database
 - Using mySQL database to generate a puzzle list 
 - Unique player tags
+- Playable 2D game written in javascript and rendered in a html canvas tag
 
 ## `Login`
 <img src="Screenshots/LoginPage.jpg">
