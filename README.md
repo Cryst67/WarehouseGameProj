@@ -15,6 +15,7 @@ A 2d game built using vanilla Javascript, HTML 5 and CSS with user authenticatio
 - Expected errors are handled by the [errorMap](https://github.com/Cryst67/WarehouseGameProj/blob/main/util/errorMap.php), letting the user know why an error occured
 - Registration and logging out are handled by the [successMap](https://github.com/Cryst67/WarehouseGameProj/blob/main/util/successMap.php), informing the user of a successful process
 - Registered users' tag, email and password are stored in a MySQL database for future authentication
+- CSS Grid to create registration and login boxes
 
 ## `Puzzle List`
 <img src="Screenshots/puzzleList.jpg">
