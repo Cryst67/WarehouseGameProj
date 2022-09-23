@@ -1,18 +1,15 @@
 "use strict";   //forces declaration of the scope of names
 
 //Game is a constructor for a game board. 
-//A game has a rectangular arrary of crateweights and a location for the bobcat that pushes them around.
-//            it has methods move(dir)  to move the bobcat around,
-//                            toString to show the gameboard as formatted text
+//A game has a rectangular arrary of crateweights and a location for the player that pushes them around.
+//            it has methods move(dir)  to move the player around,
 
-//this version requires execution in an html file containing a div with id "myText" for displaying 
-let Game = function (sd) {  //THIS IS A CONSTRUCTOR FOR A GAME OBJECT it must be called us new
+let Game = function (sd) { 
     //private game data
 
     Util.seed = sd;
 
-    let n = parseInt(Util.random() * 5) + 8;     //number of rows and columns    
-    console.log("n = ");
+    let n = parseInt(Util.random() * 5) + 8;     //number of rows and columns
     let b = [];      //initb (below) initializes to random weights and n x n
     let bob = {};    //the bob has a row,column, and direction (use 0=North,1=E,2=S,3=W)
     let target = {};
@@ -47,12 +44,10 @@ let Game = function (sd) {  //THIS IS A CONSTRUCTOR FOR A GAME OBJECT it must be
         target.r = parseInt(Util.random() * (n - 2)) + 1;
         target.c = parseInt(Util.random() * (n - 2)) + 1;
     }
-    b[target.r][target.c] = b[target.r][target.c] + 5;     //initializes target crate with weight 5+ original
-    console.log(b[target.r][target.c]);
+    b[target.r][target.c] = b[target.r][target.c] + 5;     //initializes target crate with weight 5 + original for visibility
     b[bob.r][bob.c] = 0;            //bob cannot start ontop of a crate
 
     // ===========  public methods  =================
-    //Game.prototype.move = function (dirch){   is an alternative approach for a public method
 
     this.returnScore = function () {
         return score;
@@ -84,7 +79,7 @@ let Game = function (sd) {  //THIS IS A CONSTRUCTOR FOR A GAME OBJECT it must be
                 break;
             wt = wt + tempW;
         }
-        for (let j = 0; j < i; j++) {   //slide the right number of  times
+        for (let j = 0; j < i; j++) {   //slide the right number of times
             let rprev = rr - dr[d];
             let cprev = cc - dc[d];
             b[rr][cc] = b[rprev][cprev];
@@ -95,7 +90,7 @@ let Game = function (sd) {  //THIS IS A CONSTRUCTOR FOR A GAME OBJECT it must be
     }
     this.move = function (dirch) {
         if (!gameEnd) {
-            //dirch is converted to  0123 meaning NESW 
+            //dirch is converted to  0123 -> NESW 
             let d = -1;
             if (dirch === 87)
                 d = 0;   //w
@@ -108,7 +103,7 @@ let Game = function (sd) {  //THIS IS A CONSTRUCTOR FOR A GAME OBJECT it must be
             if (dirch === 32)
                 d = bob.d;
             if (d < 0)
-                return;       //ignore bad keys
+                return;       //ignore bad inputs
             let nextR = bob.r + dr[d];
             let nextC = bob.c + dc[d];
 
