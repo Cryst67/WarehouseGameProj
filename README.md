@@ -1,5 +1,5 @@
 # WarehouseGameProj
-A 2d game built using vanilla Javascript, HTML 5 and CSS with user authentication and serverside database integration using PHP
+A 2d web game built using vanilla Javascript, HTML 5 and CSS with user authentication and serverside database integration using PHP. Best experienced on Chrome
 
 ## Features:
 - Log in page 
