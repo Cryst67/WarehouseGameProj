@@ -16,7 +16,7 @@ A 2d game built using vanilla Javascript, HTML 5 and CSS with user authenticatio
 ## `Game`
 <img src="Screenshots/Game.jpg">
 
-## Some details
+## Details
 ### `Login Page`
 - The login page uses functions from [validate.php](https://github.com/Cryst67/WarehouseGameProj/blob/main/util/validate.php) to validate form data for user registeration and login
 - Expected errors are handled by the [errorMap](https://github.com/Cryst67/WarehouseGameProj/blob/main/util/errorMap.php), letting the user know why an error occured
