@@ -31,13 +31,14 @@ A 2d game built using vanilla Javascript, HTML 5 and CSS with user authenticatio
 
 ### `Warehouse Game`
   - How to play the game
+  - 
     - You control the player sprite, using [WASD](https://en.wikipedia.org/wiki/Arrow_keys#WASD_keys) to move. Moving to another tile adds 1 to the score
     -  To win the game, player needs to push the target crate (marked in red) of variable weight (1 ... 3) to beginning position, marked by the green tile
     -  Player cannot push crates with a total weight > 3
     -  If stuck, player can destroy crates using the [SPACEBAR](https://en.wikipedia.org/wiki/Space_bar) key, adding 100 to the score
     -  If target crate is stuck on the edge of the grid, game can be restarted using the restart button
+  
  - One of each game element (image) is pulled on initial page load and hidden
  - Game is rendered using a static HTML canvas tag
  - Game can have a variable *n* x *n* grid of size (8 ... 12)
  - Target crate is guaranteed to not be initialized on the edge of the playable grid
- - 
