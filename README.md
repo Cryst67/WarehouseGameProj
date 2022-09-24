@@ -23,7 +23,7 @@ A 2d web game built using vanilla Javascript, HTML 5 and CSS with user authentic
 - Puzzlelist page pulls data from the MySQL database to display each game's top scorer's tag, score and date of reaching top score.
 - Logged in player's tag is displayed on the top left using PHP sessions to store user information
 - Logout button on the top right logs player out by killing the current session using [logout.php](https://github.com/Cryst67/WarehouseGameProj/blob/main/sessions/logout.php)
-- The puzzlelist page and game pages cannot be accessed without being logged in
+- The puzzlelist and game pages cannot be accessed without being logged in
 
 ## `Game`
 <img src="Screenshots/Game.jpg">
